@@ -2204,7 +2204,7 @@ angular.module('ngCropper', ['ng'])
 
       context.drawImage(image, data.x, data.y, data.width, data.height, 0, 0, data.width, data.height);
 
-      var encoded = canvas.toDataURL(file.type);
+      var encoded = canvas.toDataURL();
       removeElement(canvas);
 
       return _decodeBlob(encoded);
